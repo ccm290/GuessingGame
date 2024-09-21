@@ -1,0 +1,33 @@
+.container-sm > *{
+    text-align: center;
+    margin: 20px 0px;
+  }
+  .title {
+      font-size: 2.5em;
+  }
+  .instructions {
+    font-size: 1.2em;
+  }
+  
+  .hint-arrow {
+    font-size: 10em;
+    margin: 20px 0px;
+  }
+
+  .hint-text {
+    font-size: 3em;
+    margin: 15px 0px;
+  }
+
+  .guesses-left {
+    font-size: 1.3em;
+  }
+
+  .frame {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    background-color: rgba(5, 105, 255, 0.2);
+    border-radius: 1cap;
+
+  }

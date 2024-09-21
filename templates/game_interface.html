@@ -1,0 +1,16 @@
+{% import "_macros.html" as macros %}
+
+<html>
+    {{ macros.head() }}
+    
+    <body class="p-3 m-0 border-0 bd-example m-0 border-0" data-bs-theme='dark'>
+
+        <!-- Example Code -->
+        <div class="frame container-sm">
+          {% block controls %}{% endblock %} 
+        </div>
+        
+      
+    </body>
+
+</html>

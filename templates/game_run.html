@@ -1,0 +1,30 @@
+{% extends 'game_interface.html' %}
+
+{% block controls %}
+<div class="title">Guess My Number</div>
+<div class="instructions">Guess my number by entering it into the text box below.  Be careful, though, you only get 10 tries!</div>          
+<form class="input-group mb-3" method="POST" action="/submit_guess">
+    <input type="text" class="form-control" placeholder="Enter your guess..." 
+    aria-label="User Guess" aria-describedby="button-addon2" name="txtGuess">
+    <button class="btn btn-primary" type="submit" id="button-addon2">
+    Submit</button>
+</form>
+  <!-- 
+    the "|safe" removes escaping so the HTML in "display_guesses"
+    is properly rendered.  
+   -->
+  <div id='output'>
+    <div class="hint-arrow">
+        {{ data.hint_arrow }}
+    </div>
+
+    <div class="hint-text">
+        {{ data.hint_text }}
+    </div>
+    
+    <div class="guesses-left">
+        Guesses Left: {{ data.guesses_left }}
+    </div>
+  </div>
+{% endblock %}
+

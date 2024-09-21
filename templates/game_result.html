@@ -1,0 +1,22 @@
+{% extends 'game_interface.html' %}
+
+{% block controls %}
+    <div class="title">Result</div>
+    <div class="result">  
+        {% if data.state == 1 %}
+            You won!
+        {% elif data.state == 2 %}
+            You lost...
+        {% else %}
+            Couldn't resolve result....
+        {% endif %}    
+    </div>
+    <div class="row justify-content-center">
+    <form method="POST" action="/new_game">
+        <button class="btn btn-primary" type="submit" id="button-addon2">
+                New Game
+        </button>
+    </form>
+</div>
+{% endblock %}
+
